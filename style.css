@@ -3,7 +3,7 @@
 }
 
 .list-img-start {
-  max-height: 120px;
+  max-height: 100px;
   margin-right: 30px;
 }
 
@@ -11,5 +11,6 @@
   position: relative;
   display: flex;
   min-height: 115px;
-  width: 50%;
+  width: 100%;
+  padding: 20px;
 }
