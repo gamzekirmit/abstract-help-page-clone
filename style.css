@@ -1,10 +1,17 @@
+body {
+  font-family: "GT America Standard", sans-serif;
+}
+
 .help-home .container-fluid {
-  padding: 5px 100px;
+  padding: 15px 100px;
 }
 
 .list-img-start {
-  max-height: 100px;
+  max-height: 90px;
   margin-right: 30px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
 }
 
 .help-list {
@@ -12,5 +19,31 @@
   display: flex;
   min-height: 115px;
   width: 100%;
-  padding: 20px;
+  margin-bottom: 3rem;
+  padding-right: 15px;
+}
+
+.list-block {
+  position: relative;
+  color: #191a1b;
+  width: 100%;
+  padding: 0 1.5rem 0 0;
+}
+
+.list-title {
+  font-weight: bold;
+  margin: 3rem 0 1rem;
+}
+
+.list-description {
+  font-size: 24px;
+  line-height: 32px;
+  margin-bottom: 20px;
+}
+
+.list-link {
+  font-size: 20px;
+  text-decoration: none;
+  color: #4c5fd5;
+  font-weight: 400;
 }
