@@ -47,3 +47,10 @@ body {
   color: #4c5fd5;
   font-weight: 400;
 }
+
+.footer {
+  padding: 15px 100px;
+  font-size: 16px;
+  font-weight: 400;
+  color: white;
+}

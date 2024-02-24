@@ -6,7 +6,7 @@ const abstractLink2 = document.getElementById(`abstract-link-2`);
 const abstractLink3 = document.getElementById(`abstract-link-3`);
 const footerBackground = document.getElementById(`footer-help-page`);
 
-//footerBackground.style.backgroundColor = `#000000`;
+footerBackground.style.backgroundColor = `#000000`;
 abstractLink1.innerHTML = `<a href="#">Start Trial</a>`;
 abstractLink2.innerHTML = `<a href="#">Pricing</a>`;
 abstractLink3.innerHTML = `<a href="#">Download</a>`;
@@ -122,3 +122,26 @@ function createCompanyLinks() {
   });
 }
 createCompanyLinks();
+
+function createContactLinks() {
+  const contactContainer = document.getElementById("contact-us");
+
+  const contactTitle = document.createElement("h5");
+  contactTitle.textContent = "Contact Us";
+  contactContainer.appendChild(contactTitle);
+
+  const contactList = document.createElement("ul");
+  contactContainer.appendChild(contactList);
+
+  const linksCom = [{ text: "info@abstract.com", href: "#" }];
+
+  linksCom.forEach((link) => {
+    const listItem = document.createElement("li");
+    const linkElement = document.createElement("a");
+    linkElement.textContent = link.text;
+    linkElement.href = link.href;
+    listItem.appendChild(linkElement);
+    contactList.appendChild(listItem);
+  });
+}
+createContactLinks();
