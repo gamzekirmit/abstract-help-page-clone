@@ -77,7 +77,7 @@ function createCommunityLinks() {
   const communityList = document.createElement("ul");
   communityContainer.appendChild(communityList);
 
-  const links = [
+  const communityLinks = [
     { text: "Twitter", href: "#" },
     { text: "LinkedIn", href: "#" },
     { text: "Facebook", href: "#" },
@@ -85,7 +85,7 @@ function createCommunityLinks() {
     { text: "Podcast", href: "#" },
   ];
 
-  links.forEach((link) => {
+  communityLinks.forEach((link) => {
     const listItem = document.createElement("li");
     const linkElement = document.createElement("a");
     linkElement.textContent = link.text;
@@ -106,13 +106,13 @@ function createCompanyLinks() {
   const companyList = document.createElement("ul");
   companyContainer.appendChild(companyList);
 
-  const linksCom = [
+  const companyLinks = [
     { text: "About Us", href: "#" },
     { text: "Careers", href: "#" },
     { text: "Legal", href: "#" },
   ];
 
-  linksCom.forEach((link) => {
+  companyLinks.forEach((link) => {
     const listItem = document.createElement("li");
     const linkElement = document.createElement("a");
     linkElement.textContent = link.text;
@@ -133,9 +133,9 @@ function createContactLinks() {
   const contactList = document.createElement("ul");
   contactContainer.appendChild(contactList);
 
-  const linksCom = [{ text: "info@abstract.com", href: "#" }];
+  const contactLinks = [{ text: "info@abstract.com", href: "#" }];
 
-  linksCom.forEach((link) => {
+  contactLinks.forEach((link) => {
     const listItem = document.createElement("li");
     const linkElement = document.createElement("a");
     linkElement.textContent = link.text;
@@ -145,3 +145,29 @@ function createContactLinks() {
   });
 }
 createContactLinks();
+
+// const communityTitle = document.createElement("h5");
+// communityTitle.textContent = "Community";
+
+//const communityNewList = document.createElement(`ul`);
+// document.getElementById("community-link").appendChild(communityTitle);
+
+const helpTitle = document.createElement(`h1`);
+helpTitle.textContent = `How can we help?`;
+
+document.getElementById("help-title").appendChild(helpTitle);
+
+// Yeni bir input (input) öğesi oluştur
+const navSearchBox = document.createElement("input");
+
+// Input öğesine özellikler ekle
+navSearchBox.type = "text";
+navSearchBox.placeholder = "Ara...";
+
+// Input öğesine stil ekle (isteğe bağlı)
+navSearchBox.style.padding = "5px";
+navSearchBox.style.marginBottom = "10px";
+navSearchBox.style.width = "200px";
+
+// Belgeye yeni oluşturulan input öğesini ekle
+document.getElementById("container").appendChild(navSearchBox);
