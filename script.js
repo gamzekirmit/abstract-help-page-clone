@@ -1,18 +1,60 @@
 "use strict";
-//Header section
+//Header section left
 const abstractHeader = document.createElement(`a`);
 abstractHeader.textContent = `Abstract`;
 abstractHeader.href = `#`;
 const helpCenter = document.createElement(`a`);
 helpCenter.textContent = `Help Center`;
 helpCenter.href = `#`;
-const bla = document.getElementById(`header-help-center`);
+const topbarCenter = document.getElementById(`header-help-center`);
 abstractHeader.style.borderRight = `3px solid #fff`;
 abstractHeader.style.margin = `8px`;
 abstractHeader.style.padding = `8px`;
-bla.appendChild(abstractHeader);
-bla.appendChild(helpCenter);
+topbarCenter.appendChild(abstractHeader);
+topbarCenter.appendChild(helpCenter);
 
+//Header section Right request button
+const buttonRequest = document.createElement(`button`);
+const buttonLink = document.createElement(`a`);
+const link =
+  (buttonLink.href = `https://help.abstract.com/hc/en-us/articles/360050382291-Contact-Support`);
+buttonRequest.textContent = `Submit a request`;
+buttonRequest.style.width = `200px`;
+buttonRequest.style.height = `50px`;
+buttonRequest.style.border = `1px solid #fff`;
+buttonRequest.style.color = `#fff`;
+buttonRequest.style.backgroundColor = `#191a1b`;
+buttonRequest.style.borderRadius = `8px`;
+buttonRequest.appendChild(buttonLink);
+
+buttonRequest.addEventListener(`click`, function () {
+  window.open(link, `_blank`);
+});
+document.getElementById(`header-sign`).appendChild(buttonRequest);
+/////////////
+//////////////////
+///////////////
+///////////////////
+
+//Header section Right sign button
+const buttonSign = document.createElement(`button`);
+buttonSign.textContent = `Sign in`;
+buttonSign.style.backgroundColor = `#4C5FD5`;
+buttonSign.style.color = `#fff`;
+buttonSign.style.paddingLeft = `32px`;
+buttonSign.style.paddingRight = `32px`;
+buttonSign.style.border = `1px solid transparent `;
+buttonSign.style.borderRadius = `8px `;
+buttonSign.style.width = `150px `;
+buttonSign.style.height = `50px `;
+buttonSign.style.marginLeft = `50px `;
+buttonSign.style.position = `relative `;
+document.getElementById(`header-sign`).appendChild(buttonSign);
+
+///////////////////////
+/////////////////
+////////////////
+////////////
 //Nav section
 const helpTitle = document.createElement(`h1`);
 helpTitle.textContent = `How can we help?`;
@@ -24,6 +66,9 @@ navSearchBox.placeholder = "Search";
 navSearchBox.style.padding = "5px";
 navSearchBox.style.marginBottom = "10px";
 navSearchBox.style.width = "600px";
+navSearchBox.style.border = `1px solid #000`;
+navSearchBox.style.borderRadius = `4px`;
+navSearchBox.style.boxShadow = "0 9px 14px 0 rgba(0, 0, 0, 0.1)";
 document.getElementById("nav-search").appendChild(navSearchBox);
 
 //Foteer Abstract Link
