@@ -1,4 +1,17 @@
 "use strict";
+//Header section
+const abstractHeader = document.createElement(`a`);
+abstractHeader.textContent = `Abstract`;
+abstractHeader.href = `#`;
+const helpCenter = document.createElement(`a`);
+helpCenter.textContent = `Help Center`;
+helpCenter.href = `#`;
+const bla = document.getElementById(`header-help-center`);
+abstractHeader.style.borderRight = `3px solid #fff`;
+abstractHeader.style.margin = `8px`;
+abstractHeader.style.padding = `8px`;
+bla.appendChild(abstractHeader);
+bla.appendChild(helpCenter);
 
 //Nav section
 const helpTitle = document.createElement(`h1`);
