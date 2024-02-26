@@ -1,5 +1,18 @@
 "use strict";
 
+//Nav section
+const helpTitle = document.createElement(`h1`);
+helpTitle.textContent = `How can we help?`;
+document.getElementById("help-title").appendChild(helpTitle);
+
+const navSearchBox = document.createElement("input");
+navSearchBox.type = "text";
+navSearchBox.placeholder = "Search";
+navSearchBox.style.padding = "5px";
+navSearchBox.style.marginBottom = "10px";
+navSearchBox.style.width = "600px";
+document.getElementById("nav-search").appendChild(navSearchBox);
+
 //Foteer Abstract Link
 const abstractLink1 = document.getElementById(`abstract-link-1`);
 const abstractLink2 = document.getElementById(`abstract-link-2`);
@@ -145,29 +158,3 @@ function createContactLinks() {
   });
 }
 createContactLinks();
-
-// const communityTitle = document.createElement("h5");
-// communityTitle.textContent = "Community";
-
-//const communityNewList = document.createElement(`ul`);
-// document.getElementById("community-link").appendChild(communityTitle);
-
-const helpTitle = document.createElement(`h1`);
-helpTitle.textContent = `How can we help?`;
-
-document.getElementById("help-title").appendChild(helpTitle);
-
-// Yeni bir input (input) öğesi oluştur
-const navSearchBox = document.createElement("input");
-
-// Input öğesine özellikler ekle
-navSearchBox.type = "text";
-navSearchBox.placeholder = "Ara...";
-
-// Input öğesine stil ekle (isteğe bağlı)
-navSearchBox.style.padding = "5px";
-navSearchBox.style.marginBottom = "10px";
-navSearchBox.style.width = "200px";
-
-// Belgeye yeni oluşturulan input öğesini ekle
-document.getElementById("container").appendChild(navSearchBox);
