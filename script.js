@@ -25,6 +25,7 @@ buttonRequest.style.border = `1px solid #fff`;
 buttonRequest.style.color = `#fff`;
 buttonRequest.style.backgroundColor = `#191a1b`;
 buttonRequest.style.borderRadius = `8px`;
+buttonRequest.style.position = `right`;
 buttonRequest.appendChild(buttonLink);
 
 buttonRequest.addEventListener(`click`, function () {
@@ -157,12 +158,12 @@ function createCommunityLinks() {
   ];
 
   communityLinks.forEach((link) => {
-    const listItem = document.createElement("li");
-    const linkElement = document.createElement("a");
-    linkElement.textContent = link.text;
-    linkElement.href = link.href;
-    listItem.appendChild(linkElement);
-    communityList.appendChild(listItem);
+    const listCommunity = document.createElement("li");
+    const linkCommunity = document.createElement("a");
+    linkCommunity.textContent = link.text;
+    linkCommunity.href = link.href;
+    listCommunity.appendChild(linkCommunity);
+    communityList.appendChild(listCommunity);
   });
 }
 createCommunityLinks();
@@ -184,12 +185,12 @@ function createCompanyLinks() {
   ];
 
   companyLinks.forEach((link) => {
-    const listItem = document.createElement("li");
-    const linkElement = document.createElement("a");
-    linkElement.textContent = link.text;
-    linkElement.href = link.href;
-    listItem.appendChild(linkElement);
-    companyList.appendChild(listItem);
+    const listCompany = document.createElement("li");
+    const linkCompany = document.createElement("a");
+    linkCompany.textContent = link.text;
+    linkCompany.href = link.href;
+    listCompany.appendChild(linkCompany);
+    companyList.appendChild(listCompany);
   });
 }
 createCompanyLinks();
@@ -207,12 +208,12 @@ function createContactLinks() {
   const contactLinks = [{ text: "info@abstract.com", href: "#" }];
 
   contactLinks.forEach((link) => {
-    const listItem = document.createElement("li");
-    const linkElement = document.createElement("a");
-    linkElement.textContent = link.text;
-    linkElement.href = link.href;
-    listItem.appendChild(linkElement);
-    contactList.appendChild(listItem);
+    const listContact = document.createElement("li");
+    const linkContact = document.createElement("a");
+    linkContact.textContent = link.text;
+    linkContact.href = link.href;
+    listContact.appendChild(linkContact);
+    contactList.appendChild(listContact);
   });
 }
 createContactLinks();
