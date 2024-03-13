@@ -65,3 +65,23 @@ body {
   padding: 15px 80px;
   height: 100px;
 }
+
+.button-play ul {
+  list-style-type: none;
+  padding: 0px;
+}
+
+.button-play a {
+  text-decoration: none;
+  color: white;
+}
+
+.button-play h5 {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: bold;
+}
+
+#footer-help-page {
+  padding-bottom: 60px;
+}
