@@ -3,6 +3,7 @@
 const abstractHeader = document.createElement(`a`);
 abstractHeader.textContent = `Abstract`;
 abstractHeader.href = `#`;
+abstractHeader.style.fontWeight = `540`;
 const helpCenter = document.createElement(`a`);
 helpCenter.textContent = `Help Center`;
 helpCenter.href = `#`;
