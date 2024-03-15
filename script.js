@@ -3,12 +3,13 @@
 const abstractHeader = document.createElement(`a`);
 abstractHeader.textContent = `Abstract`;
 abstractHeader.href = `#`;
-abstractHeader.style.fontWeight = `540`;
+abstractHeader.style.fontWeight = `550`;
+abstractHeader.style.fontSize = `24px`;
 const helpCenter = document.createElement(`a`);
 helpCenter.textContent = `Help Center`;
 helpCenter.href = `#`;
 const topbarCenter = document.getElementById(`header-help-center`);
-abstractHeader.style.borderRight = `3px solid #fff`;
+abstractHeader.style.borderRight = `2px solid #fff`;
 abstractHeader.style.margin = `8px`;
 abstractHeader.style.padding = `8px`;
 topbarCenter.appendChild(abstractHeader);
@@ -20,43 +21,36 @@ const buttonLink = document.createElement(`a`);
 const link =
   (buttonLink.href = `https://help.abstract.com/hc/en-us/articles/360050382291-Contact-Support`);
 buttonRequest.textContent = `Submit a request`;
-buttonRequest.style.width = `200px`;
-buttonRequest.style.height = `50px`;
+buttonRequest.style.padding = `6px 22px`;
+buttonRequest.style.fontSize = `24px`;
+buttonRequest.style.fontWeight = `400`;
 buttonRequest.style.border = `1px solid #fff`;
 buttonRequest.style.color = `#fff`;
 buttonRequest.style.backgroundColor = `#191a1b`;
 buttonRequest.style.borderRadius = `8px`;
 buttonRequest.style.position = `right`;
+buttonRequest.style.marginRight = `15px`;
 buttonRequest.appendChild(buttonLink);
 
 buttonRequest.addEventListener(`click`, function () {
   window.open(link, `_blank`);
 });
 document.getElementById(`header-sign`).appendChild(buttonRequest);
-/////////////
-//////////////////
-///////////////
-///////////////////
 
 //Header section Right sign button
 const buttonSign = document.createElement(`button`);
 buttonSign.textContent = `Sign in`;
 buttonSign.style.backgroundColor = `#4C5FD5`;
 buttonSign.style.color = `#fff`;
-buttonSign.style.paddingLeft = `32px`;
-buttonSign.style.paddingRight = `32px`;
+buttonSign.style.padding = `6px 22px`;
+buttonSign.style.fontSize = `24px`;
+buttonSign.style.fontWeight = `400`;
 buttonSign.style.border = `1px solid transparent `;
 buttonSign.style.borderRadius = `8px `;
-buttonSign.style.width = `150px `;
-buttonSign.style.height = `50px `;
-buttonSign.style.marginLeft = `50px `;
-buttonSign.style.position = `relative `;
+buttonSign.style.paddingRight = `32px `;
+buttonSign.style.paddingLeft = `32px `;
 document.getElementById(`header-sign`).appendChild(buttonSign);
 
-///////////////////////
-/////////////////
-////////////////
-////////////
 //Nav section
 const helpTitle = document.createElement(`h1`);
 helpTitle.textContent = `How can we help?`;
