@@ -83,14 +83,15 @@ body {
   margin: 48px 0px 16px;
 }
 
-/* .button-play-copyright {
+.button-play-copyright {
   position: absolute;
-  right: 0;
-  bottom: 0;
-} */
+  bottom: 0px;
+  right: 0px;
+}
 
 #footer-help-page {
   padding-bottom: 60px;
+  position: relative;
 }
 
 .header-item a {
