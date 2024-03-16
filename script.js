@@ -188,18 +188,14 @@ function createCompanyLinks() {
     listCompany.appendChild(linkCompany);
     companyList.appendChild(listCompany);
   });
-}
-createCompanyLinks();
 
-function createContactLinks() {
-  const contactContainer = document.getElementById("contact-us");
-
-  const contactTitle = document.createElement("h5");
+  const contactTitle = document.createElement("h6");
   contactTitle.textContent = "Contact Us";
-  contactContainer.appendChild(contactTitle);
+  contactTitle.style.marginTop = " 30px";
+  companyContainer.appendChild(contactTitle);
 
   const contactList = document.createElement("ul");
-  contactContainer.appendChild(contactList);
+  companyContainer.appendChild(contactList);
 
   const contactLinks = [{ text: "info@abstract.com", href: "#" }];
 
@@ -212,4 +208,4 @@ function createContactLinks() {
     contactList.appendChild(listContact);
   });
 }
-createContactLinks();
+createCompanyLinks();
