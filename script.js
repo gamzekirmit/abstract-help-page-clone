@@ -55,7 +55,7 @@ buttonSign.addEventListener(`click`, function () {
 });
 document.getElementById(`header-sign`).appendChild(buttonSign);
 
-//Nav section
+//Nav section SearchBox
 const helpTitle = document.createElement(`h1`);
 helpTitle.textContent = `How can we help?`;
 document.getElementById("help-title").appendChild(helpTitle);
@@ -95,50 +95,6 @@ resourcesLink3.innerHTML = `<a href="#">Release Notes</a>`;
 resourcesLink4.innerHTML = `<a href="#">Status</a>`;
 
 //Footer Community link
-// const communityTitle = document.createElement("h5");
-// communityTitle.textContent = "Community";
-
-// const communityNewList = document.createElement(`ul`);
-
-// const communityList1 = document.createElement(`li`);
-// const communityLink1 = document.createElement(`a`);
-// communityLink1.textContent = `Twitter`;
-// communityLink1.href = `#`;
-// communityList1.appendChild(communityLink1);
-// communityNewList.appendChild(communityList1);
-
-// const communityList2 = document.createElement(`li`);
-// const communityLink2 = document.createElement(`a`);
-// communityLink2.textContent = `LinkedIn`;
-// communityLink2.href = `#`;
-// communityList2.appendChild(communityLink2);
-// communityNewList.appendChild(communityList2);
-
-// const communityList3 = document.createElement(`li`);
-// const communityLink3 = document.createElement(`a`);
-// communityLink3.textContent = `Facebook`;
-// communityLink3.href = `#`;
-// communityList3.appendChild(communityLink3);
-// communityNewList.appendChild(communityList3);
-
-// const communityList4 = document.createElement(`li`);
-// const communityLink4 = document.createElement(`a`);
-// communityLink4.textContent = `Dribbble`;
-// communityLink4.href = `#`;
-// communityList4.appendChild(communityLink4);
-// communityNewList.appendChild(communityList4);
-
-// const communityList5 = document.createElement(`li`);
-// const communityLink5 = document.createElement(`a`);
-// communityLink5.textContent = `Podcast`;
-// communityLink5.href = `#`;
-// communityList5.appendChild(communityLink5);
-// communityNewList.appendChild(communityList5);
-
-// document.getElementById("community-link").appendChild(communityTitle);
-// document.getElementById("community-link").appendChild(communityNewList);
-
-//Footer Community link
 function createCommunityLinks() {
   const communityContainer = document.getElementById("community-link");
 
@@ -168,6 +124,7 @@ function createCommunityLinks() {
 }
 createCommunityLinks();
 
+//Footer Company link
 function createCompanyLinks() {
   const companyContainer = document.getElementById("company-link");
 
