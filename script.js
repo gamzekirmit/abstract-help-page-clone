@@ -18,8 +18,7 @@ topbarCenter.appendChild(helpCenter);
 //Header section Right request button
 const buttonRequest = document.createElement(`button`);
 const buttonLink = document.createElement(`a`);
-const link =
-  (buttonLink.href = `https://help.abstract.com/hc/en-us/articles/360050382291-Contact-Support`);
+const link = (buttonLink.href = `#`);
 buttonRequest.textContent = `Submit a request`;
 buttonRequest.style.padding = `6px 22px`;
 buttonRequest.style.fontSize = `24px`;
@@ -40,6 +39,7 @@ document.getElementById(`header-sign`).appendChild(buttonRequest);
 //Header section Right sign button
 const buttonSign = document.createElement(`button`);
 buttonSign.textContent = `Sign in`;
+const linkSign = (buttonSign.href = `#`);
 buttonSign.style.backgroundColor = `#4C5FD5`;
 buttonSign.style.color = `#fff`;
 buttonSign.style.padding = `6px 22px`;
@@ -49,6 +49,10 @@ buttonSign.style.border = `1px solid transparent `;
 buttonSign.style.borderRadius = `8px `;
 buttonSign.style.paddingRight = `32px `;
 buttonSign.style.paddingLeft = `32px `;
+
+buttonSign.addEventListener(`click`, function () {
+  window.open(linkSign, `_blank`);
+});
 document.getElementById(`header-sign`).appendChild(buttonSign);
 
 //Nav section
@@ -95,7 +99,6 @@ resourcesLink4.innerHTML = `<a href="#">Status</a>`;
 // communityTitle.textContent = "Community";
 
 // const communityNewList = document.createElement(`ul`);
-// document.getElementById("community-link").appendChild(communityTitle);
 
 // const communityList1 = document.createElement(`li`);
 // const communityLink1 = document.createElement(`a`);
@@ -132,6 +135,7 @@ resourcesLink4.innerHTML = `<a href="#">Status</a>`;
 // communityList5.appendChild(communityLink5);
 // communityNewList.appendChild(communityList5);
 
+// document.getElementById("community-link").appendChild(communityTitle);
 // document.getElementById("community-link").appendChild(communityNewList);
 
 //Footer Community link
